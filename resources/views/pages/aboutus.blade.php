@@ -66,28 +66,21 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
-
             <div class="content">
                 <div class="title m-b-md">
-                    SwipeRightToApply
+                    About Us
                 </div>
-
+                <div class="dark">
+                    <figure>
+                        <img class="about" src="/images/p1.jpg" alt="p1.jpg">
+                        <figcaption>Stay cool and study hard</figcaption>
+                    </figure>
+                </div>
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="contact">Contact us</a>
-                    <a href="about">About</a>
+                    <a href="mailto:admin@swiperrighttoapply.com?subject=swipe right to apply, help">Email</a>
+                    <a href="https://twitter.com/swiperighttoapply">Twitter</a>
+                    <a href="https://www.facebook.com/swiperighttoapply">Facebook</a>
+                    <a href="https://developer.apple.com/app-store/">IOS</a>
                 </div>
             </div>
         </div>

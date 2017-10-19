@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/whatever', function () {
     return "who care?";
 });
+
+Route::get('contact', 'PagesController@contact');
+Route::get('about', 'PagesController@about');
