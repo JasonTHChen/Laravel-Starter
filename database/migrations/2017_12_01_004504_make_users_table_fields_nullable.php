@@ -20,6 +20,7 @@ class MakeUsersTableFieldsNullable extends Migration
             $table->string('workphoneextension')->nullable()->change();
             $table->string('mobilephone')->nullable()->change();
             $table->string('homephone')->nullable()->change();
+            $table->string('middlename')->nullable()->change();
         });
     }
 
@@ -37,6 +38,7 @@ class MakeUsersTableFieldsNullable extends Migration
             $table->string('workphoneextension')->nullable(false)->change();
             $table->string('mobilephone')->nullable(false)->change();
             $table->string('homephone')->nullable(false)->change();
+            $table->string('middlename')->nullable()->change();
         });
     }
 }
