@@ -1,88 +1,22 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('pages.master')
 
-        <title>Laravel</title>
+@section('title')
+    SwipeRightToApply is about you, not about us
+@stop
+@section('header')
+    About Us
+@stop
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            <div class="content">
-                <div class="title m-b-md">
-                    About Us
-                </div>
-                <div class="dark">
-                    <figure>
-                        <img class="about" src="/images/p1.jpg" alt="p1.jpg">
-                        <figcaption>Stay cool and study hard</figcaption>
-                    </figure>
-                </div>
-                <div class="links">
-                    <a href="mailto:admin@swiperrighttoapply.com?subject=swipe right to apply, help">Email</a>
-                    <a href="https://twitter.com/swiperighttoapply">Twitter</a>
-                    <a href="https://www.facebook.com/swiperighttoapply">Facebook</a>
-                    <a href="https://developer.apple.com/app-store/">IOS</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+@section('data')
+    <div class="dark">
+        <figure>
+            <img class="about" src="/images/j.jpg" alt="jason" style='width:25%;' border="0">
+            <figcaption>Jason wants you spending time doing what you love</figcaption>
+        </figure>
+        <p style="font-weight:800; color:black;text-align:left; padding-left:20%; padding-right:20%; padding-top:10px">
+            We want you to spend your time your way. Apply for as many jobs as you like with the swipe of a finger.
+            When you and a potential employer have expressed mutual interest, only then should you invest large
+            amounts of time. We will help you find and apply for jobs in the easiest, fastest ways possible.
+        </p>
+    </div>
+@stop
