@@ -26,11 +26,6 @@ $factory->define(App\User::class, function (Faker $faker) {
         'stateid' => $faker->numberBetween(1, 5000),
         'countryid' => $faker->numberBetween(1, 200),
         'postalzip' => $faker->postcode,
-        'workphone' => $faker->unique()->email,
-        'workphoneextension' => $faker->unique()->email,
-        'mobilephone' => $faker->unique()->email,
-        'homephone' => $faker->unique()->email,
-        'middlename' => $faker->unique()->email,
 
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),

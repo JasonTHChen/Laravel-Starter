@@ -25,4 +25,11 @@ Route::get('posting/{id}', 'PostingsController@show');
 Route::resource('profile', 'CompanyProfileController');
 Route::resource('post', 'JobPostController');
 
+Route::get('/places2', function () {
+    return view('pages/places2');
+});
+
 Route::get('users', 'UsersController@index');
+Route::get('users/create', 'UsersController@create')->name('createuser');
+Route::get('users/{id}', 'UsersController@show')->name('showuser');
+Route::post('users', 'UsersController@store')->name('storeuser');
